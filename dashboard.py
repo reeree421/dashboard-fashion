@@ -21,7 +21,7 @@ st.markdown("Dataset Source: [Kaggle - Women's E-Commerce Clothing Reviews](http
 
 # Reading the dataset from the file in local computer
 
-df = pd.read_csv(r"C:\Users\reewa\Downloads\Womens Clothing E-Commerce Reviews.csv")
+df = pd.read_csv("Womens Clothing E-Commerce Reviews.csv")
 df.dropna(subset=["Rating"], inplace=True)  #This ensures all rows do have ratings
 
 
@@ -128,4 +128,5 @@ st.markdown("""
 """)
 #showing success comment in case of successful run
 st.success(" For different visualizations adjust filters of age range to see review trends.")
+
     
